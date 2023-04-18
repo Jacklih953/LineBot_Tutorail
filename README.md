@@ -105,3 +105,14 @@ if __name__ == "__main__":
 回覆你傳的訊息
 
 ![image](https://user-images.githubusercontent.com/85166729/232701040-44e6defe-eab9-47b6-b043-9708f8d8d049.png)
+
+```python
+if type=='text':
+        openai.api_key = "Your openapi key"
+        msg = json_data['events'][0]['message']['text']  # 取得 LINE 收到的文字訊息
+        resopnse = openai.Completion.create(
+            model='text-davinci-003',
+            prompt = msg,
+        )
+        reply = resopnse["choices"][0]["text"].replace('\n','')
+```
