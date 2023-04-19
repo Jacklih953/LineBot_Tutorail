@@ -54,6 +54,9 @@ ngrok http 5000
 
 
 - 環境設定
+
+conda create -n "Env_name" python=3.9
+
 pip install -r requirement.txt
 or
 pip install line-bot-sdk==2.4.2
