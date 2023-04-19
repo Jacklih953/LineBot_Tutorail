@@ -60,7 +60,9 @@ ngrok http 5000
 conda create -n "Env_name" python=3.9
 
 pip install -r requirement.txt
+
 or
+
 pip install line-bot-sdk==2.4.2
 pip install openai==0.27.4
 pip install flask==2.2.3
